@@ -3,10 +3,6 @@ const sliderWrap = document.querySelector(".slider__wrap");
 let closes = document.querySelectorAll(".close");
 
 let currSlide = 0;
-let zIndexCounter = 0;
-let leftCounter = 240;
-let maxLeftCounter = closes.length * 240;
-let maxZCounter = -closes.length;
 
 function firstRightMoveTest() {
     let zIndexCounter = 0;
@@ -82,39 +78,3 @@ rightArrow.addEventListener("click", () => {
     }
     move();
 })
-
-
-
-// rightArrow.addEventListener("click", (e) => {
-//     const slideForEnd = slides[currSlide].cloneNode(true);
-//     slideForEnd.classList.remove("open");
-//     slideForEnd.classList.add("close");
-//     slideForEnd.style.left = `${maxLeftCounter}px`;
-//     slideForEnd.style.zIndex = `${maxZCounter}`;
-//     slideForEnd.children[0].children[0].style.display = "none";
-//     slideForEnd.children[0].children[1].style.display = "flex";
-//     sliderWrap.append(slideForEnd);
-//     slides[currSlide].classList.remove("open");
-//     slides[currSlide].style.opacity = "0";
-//     setTimeout(() => {
-//         slides[currSlide].remove();
-//         if(currSlide === closes.length) {
-//             slides = document.querySelectorAll(".slider__item");
-//             currSlide = 0
-//         }else {
-//             currSlide++;
-//         }
-//
-//
-//         slides[currSlide].classList.add("open");
-//         slides[currSlide].classList.remove("close");
-//         rightMoveTest();
-//
-//         const servicesCardCurrSlide = slides[currSlide].children;
-//         const innerCardCurrSlide = servicesCardCurrSlide[0];
-//
-//         innerCardCurrSlide.querySelector(".info__card").style.display = "block";
-//         innerCardCurrSlide.querySelector(".close__info__card").style.display = "none";
-//
-//     }, 100);
-// });
