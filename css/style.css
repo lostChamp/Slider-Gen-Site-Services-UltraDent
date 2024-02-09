@@ -1,0 +1,197 @@
+p, div, figure, figcaption, span, h1, h2, h3, h4, h5, a, section, body, hr, header, main, footer, form, input, button, svg, img, video, pre, textarea, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #383838;
+}
+
+.content {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+
+/* SERVICES */
+
+.services__img {
+    position: absolute;
+    left: 670px;
+    top: 175px;
+    z-index: -1;
+}
+
+.slider {
+    width: 965px;
+}
+
+.services__card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 17px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    border: 1px solid rgba(57, 156, 108, 1);
+    height: 100%;
+    padding: 50px 20px 20px 20px;
+}
+
+.left__arrow {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 17px 3px rgba(0, 0, 0, 0.2);
+    bottom: 300px;
+    left: -5%;
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+}
+
+.right__arrow {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 17px 3px rgba(0, 0, 0, 0.2);
+    bottom: 390px;
+    left: 97%;
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+}
+
+.slider__item {
+    min-width: 300px;
+    height: 500px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.card__title {
+    font-size: 24px;
+    background: linear-gradient(70deg, rgba(5, 188, 129, 1) 0%, rgba(57, 156, 108, 1) 26%, rgba(5, 188, 129, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.card__subtitle {
+    font-size: 14px;
+}
+
+.button__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(70deg, rgba(5, 188, 129, 1) 0%, rgba(57, 156, 108, 1) 26%, rgba(5, 188, 129, 1) 100%);
+    width: 200px;
+    height: 35px;
+    padding: 5px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+}
+
+.img__card__services {
+    margin: 40px 0;
+}
+
+.card__img {
+    text-align: center;
+}
+
+.services__title {
+    margin-bottom: 145px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.none__bold {
+    font-weight: 400;
+}
+
+.slider__wrap {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: row-reverse;
+}
+
+.all__services__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid rgba(57, 156, 108, 1);
+    background: linear-gradient(70deg, rgba(5, 188, 129, 1) 0%, rgba(57, 156, 108, 1) 26%, rgba(5, 188, 129, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+    font-weight: 700;
+}
+
+.close {
+    position: relative;
+    z-index: 0;
+}
+
+.open {
+    position: relative;
+    z-index: 1;
+}
+
+.all__services__button__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close__info__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 117px;
+    top: 43%;
+    transform: rotate(270deg);
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(70deg, rgba(5, 188, 129, 1) 0%, rgba(57, 156, 108, 1) 26%, rgba(5, 188, 129, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+/* SERVICES */
